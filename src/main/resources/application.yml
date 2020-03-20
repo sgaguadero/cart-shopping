@@ -1,0 +1,17 @@
+server:
+  servlet:
+    context-path: /
+    application-display-name: Shopping Cart
+  port: 8080
+
+#Datasource
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/njc
+    username: njc-user
+    password: njc-pass
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
